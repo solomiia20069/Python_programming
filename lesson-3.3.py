@@ -14,5 +14,5 @@ list_3 = []
 print(list_3[:], list_3[:])
 
 
-#list3 : str[input("enter list:")] ???
+#list3 : str[input("enter list:")] ??? пробувала експерементувати з інпутами і сплітом в лістах
 #print(list3.split("")) ???
