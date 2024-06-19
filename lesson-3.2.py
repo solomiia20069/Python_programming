@@ -1,4 +1,4 @@
-value_list = [12, 3, 4, 10]
+value_list = [1, 2, 4, 6]
 first_element = value_list.pop(0)
 last_element = value_list.pop(-1)
 value_list.insert(0, last_element)
