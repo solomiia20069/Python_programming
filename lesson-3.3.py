@@ -17,7 +17,7 @@
 #list3 : str[input("enter list:")] ??? пробувала експерементувати з інпутами і сплітом в лістах
 #print(list3.split("")) ???
 
-my_list = [1, 2, 3, 4, 5, 6]
+my_list = [1, 2, 3]
 
 separator = len(my_list) - len(my_list) // 2
 new_list = [my_list[:separator], my_list[separator:]]
