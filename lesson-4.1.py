@@ -9,3 +9,5 @@ for i in my_list:
 result += [0] * count
 
 print(result)
+
+

@@ -1,7 +1,7 @@
 #in statement
 #if, operator == 1 or operator == 2:
 
- #               and
+ #  and
  #weather = "cold"
 #match weather
  #   case ("hot")
@@ -84,15 +84,19 @@
 
 # with for we can split each object into indexes
 
-value_int = "12kfjff"
-new_val = ""
+#value_int = "12kfjff"
+#new_val = ""
 
-for symb in value_int:
+#for symb in value_int:
    #if symb.isdigit():
    # new_val += symb   # take out evrything that is not digits
     #if not symb.isdigit():  # take out all the digits but do not take out characters
      #   new_val += symb
-    if symb.isalpha():
-        new_val += symb     # take out all the digits but do not take out characters
-print(new_val)
+ #   if symb.isalpha():
+#        new_val += symb     # take out all the digits but do not take out characters
+
+stack = [3, 4, 5]
+stack.append(10)
+stack.pop(0)
+print(stack)
 
