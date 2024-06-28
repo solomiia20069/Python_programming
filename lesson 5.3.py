@@ -16,3 +16,11 @@ for char in value_str:
 print(("#") + new_value)
 
 
+#user_text = input().title()
+#new_hashtag = '#'
+#for symbol in user test:
+#    if symbol.isalnum():
+#         new hashtag += symbol
+#
+#    print (new hashtag[:140])
+
