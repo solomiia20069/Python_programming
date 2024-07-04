@@ -12,8 +12,17 @@ result = fill_letters[start_index:end_index + 1]
 print("Characters between:", result)
 
 
+##################second version of the program ##############
 
+input_str = input("").split("-")
 
+beginning = string.ascii_letters.find(input_str[0])
+ending = string.ascii_letters.find(input_str[-1])
+
+if beginning == 1 or ending == -1:
+    print("error")
+else:
+    print(string.ascii_letters[beginning:ending + 1])
 
 
 
