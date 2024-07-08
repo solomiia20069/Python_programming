@@ -95,8 +95,30 @@
  #   if symb.isalpha():
 #        new_val += symb     # take out all the digits but do not take out characters
 
-stack = [3, 4, 5]
-stack.append(10)
-stack.pop(0)
-print(stack)
+#stack = [3, 4, 5]
+#stack.append(10)
+#stack.pop(0)
+#print(stack)
+
+
+
+def main():
+    n = int(input("Enter an integer: "))
+    while n > 9:
+        product = 1
+        while n > 0:
+            product *= n % 10
+            n //= 10
+        n = product
+    print(f"The result is: {n}")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
 

@@ -9,3 +9,13 @@ def common_elements():
 assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
 
 print(common_elements())
+
+
+
+############# other way of solving the problem ########################
+def common_elements():
+
+    multiples_of_3 = [num for num in range(0, 100, 3)]
+    multiples_of_5 = [num for num in range(0, 100, 5)]
+
+    return set(multiples_of_3).intersection(multiples_of_5)
