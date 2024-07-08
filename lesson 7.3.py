@@ -4,12 +4,12 @@ def second_index(text, some_str):
    if first_index == -1:
         return None
 
-    second_index = text.find(some_str, first_index + len(some_str))
+   second_index = text.find(some_str, first_index + len(some_str))
 
-    if second_index == -1:
+   if second_index == -1:
         return None
 
-    return second_index
+   return second_index
 
 assert second_index("sims", "s") == 3, 'Test1'
 assert second_index("find the river", "e") == 12, 'Test2'
