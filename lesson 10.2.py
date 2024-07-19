@@ -1,4 +1,6 @@
 import re
+import string
+
 
 def first_word(text):
     """ Пошук першого слова """
@@ -19,15 +21,18 @@ assert first_word("Hello.World") == "Hello", 'Test6'
 print('OK')
 
 
-
+import string
 def first_word(text):
 
-    words = text.split()
-    for word in words:
-        cleaned_word = word.strip('.,!?;:(){}[]')
-        if cleaned_word.isalpha() or (cleaned_word and cleaned_word[0].isalpha()):
-            return cleaned_word
-    return None
+    word = text.strip(string.punctuation).split()[0]
+    final_word = ""
+    for letter in word:
+        if letter.isalpha() or letter == "'":
+            final_word += letter
+        elif letter in string.punctuation:
+            break
+    return final_word
+
 
 assert first_word("Hello world") == "Hello", 'Test1'
 assert first_word("greetings, friends") == "greetings", 'Test2'
