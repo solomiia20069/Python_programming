@@ -102,18 +102,40 @@
 
 
 
-def main():
-    n = int(input("Enter an integer: "))
-    while n > 9:
-        product = 1
-        while n > 0:
-            product *= n % 10
-            n //= 10
-        n = product
-    print(f"The result is: {n}")
+#def main():
+ #   n = int(input("Enter an integer: "))
+  #  while n > 9:
+   ##     product = 1
+     #   while n > 0:
+      #      product *= n % 10
+       #     n //= 10
+       # n = product
+#    print(f"The result is: {n}")
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+ #   main()
+#
+filename = "test_text.txt"
+#
+# val_list = ["hello"]
+#
+# my_file = open(filename, "w")
+
+# my_file.writelines(val_list)
+#
+# my_file.close()
+
+with open(filename, "a") as my_file:
+    my_file.write("hello world")
+
+print(1)
+
+
+
+
+
+
+
 
 
 
