@@ -1,8 +1,3 @@
-class Error:
-    def __init__(self, message="The group can't contain more than 10 students"):
-        self.message = message
-        super().__init__(self.message)
-
 class Human:
     def __init__(self, gender, age, name, surname):
         self.gender = gender
@@ -20,6 +15,11 @@ class Student(Human):
 
     def __str__(self):
         return f"{super().__str__()}, Record Book: {self.record_book}"
+
+class GroupError(Exception):
+    def __init__(self, message="The group can't contain more than 10 students"):
+        self.message = message
+        super().__init__(self.message)
 
 class Group:
     def __init__(self, number):
@@ -74,7 +74,7 @@ try:
     print(gr)
 
     gr.add_student(st11)
-except Error as i:
+except GroupError as i:
     print(i)
 
 assert str(gr.find_student('Jobs')) == str(st1), 'Test1'
